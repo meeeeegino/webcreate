@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+*{
+    padding:0px;margin:0px;
+}
+
+
+#footer_bar{
+    background:white;height:450px;width:100%;
+    box-shadow:0px 0px 10px grey;
+    bottom:0px;
+}
+#footer_bar a{
+    color:black;text-decoretion:none;
+}
+
+#hh_img_top{
+    width:100%; height:200px;
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj2waIdXZz0GIiNhPHnT3aghkWU91-LsZs2g&usqp=CAU'); background-size:cover;
+    animation:change_cover 10s infinite;
+   
+}
+
+@keyframes change_cover{
+    20%{
+        background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChkHHPaqmJapniA70ZLm4hZRjewlesh0Z3g&usqp=CAU');background-size:cover;
+    }
+    40%{
+        background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt-ymw_YT3oLRHWLt6gtu7ytTsm126aDJd_g&usqp=CAU'); background-size:cover;
+    }
+}
+#bol1{
+    height:12px;width:12px;border-radius:50%;border:0;margin:5px; background:silver;
+}
+#order_an{
+    height:40px;width:150px;background:#4070f4;border:0;color:white;border-radius:10px; animation:order_an 10s infinite;
+}
+@keyframes order_an{
+    20%{
+        background:orange;
+    }
+    40%{
+        background:black;
+    }
+    50%{
+        background:skyblue;
+    }
+}
+#whatsapp_in{
+    height:50px;width:50px;
+    
+    top:80vh;margin-left:110px;
+    background:0;border:0;
+     position:fixed;float:right;
+    border-radius:10px; background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDNRmdKxjQTGNV3HbG2FPS4Q3yJxBxX6wpnQ&usqp=CAU'); background-size:cover;
+}
+#iim{
+    width:25%;height:200px;float:left;
+    margin:10px;
+   
+    
+     background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXi1x4ckcpwzW-SSag5xIRjkD6-vWP5ScltA&usqp=CAU');background-size:cover; 
+}
+
+
+.menu_btn{
+    height:50px;width:50px;float:right;border:0;font-size:18px;
+}
+#op_h_bth{
+    height:50px;width:100%; background:#D3D3D3; border:0;
+}
+#op_h_bth:hover{
+    background:grey; color:white;
+}
+#menu_box{
+    height:0px;width:90%; overflow :hidden;background:white;box-shadow:0px 0px 10px grey; transition:0.35s;
+}
+.tns_bord{
+    height:0px;width:100%;transition:0.45s; background:white; position:fixed;box-shadow:0px 0px 10px grey; bottom:-30px;border-radius:25px;
+
+}
+#ss_tab{
+    height:50px;width:50px;border-radius:50%;border:0;font-size:30px;float:right; box-shadow:0px 0px 10px grey;margin:10px;background:0;
+
+}
+.ssp{
+   height:50px;width:50px;border-radius:50%;border:0;margin-left:20px;font-size:20px;
+}
+
+#pap{
+   width:110px;font-size:15px;border-radius:20px;
+    height:40px;background:0;border:0;
+}
+#pap:hover{
+    background:silver;
+}
+#cl_menu{
+    display:none;
+}
+#co_btn{
+    height:60px;width:60px;border-radius:50%;border:0;box-shadow:0px 0px 10px grey;margin:10px;background:white;font-size:25px;
+}
+#profile{
+    height:500px;width:90%;box-shadow:0px 0px 10px grey; background: white;margin:20px;display:none; overflow:hidden;position:fixed;
+    }
+</style>
+<body>
+<center>
+</br>
+<div style="height:50px;width:90%;box-shadow:0px 0px 5px; grey">
+
+<h3 style="float:left;margin:15px; color:silver;">Powered by Shiv Kumar</h3>
+
+
+<button class="menu_btn" id="op_menu" onclick="menu_op()"><b>&#9776</b></button>
+
+
+<button class="menu_btn" id="cl_menu" onclick="menu_cl()"><b>&times</b></button>
+
+</div>
+</br>
+<div id="menu_box" onclick="menu_cc()">
+<button id="op_h_bth">Home</button>
+
+
+
+
+
+<button onclick="op_profile()"id="op_h_bth">Profile</button>
+
+<button id="op_h_bth" onclick="op_privacy()">Privacy Policies</button>
+
+
+<button id="op_h_bth" onclick="op_trems()">Trems & condition</button>
+
+<button id="op_h_bth" onclick="about()">About</button>
+
+<a href="https://www.facebook.com/groups/601373121132295/?ref=share">
+<button id="op_h_bth" style="background: skyblue;">Social Ranking</button></a>
+
+</div>
+
+
+
+
+
+
+
+
+<div id="profile">
+<div style="height:300px;margin:-120px;width:500px; background:#4070f4; transform: rotate(-200deg);"></div>
+
+<button onclick="cl_profile()" style="font-size:30px;color: white;position:fixed;margin:-40px 110px;float:right; background:0; width:50px;border:0;">&times</button>
+
+
+
+<div style="height:180px;width:180px; background:red;border-radius:50%;position:fixed;margin:10px 70px;
+
+
+background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmHbfbDYY5PzmTKlWwb6ylQMgLMVy5c5vBg&s');
+
+background-size:cover;"></div>
+
+<h2 style="margin:200px 30px;">Shiv Kumar</h2>
+<h6 style="margin:-200px;"><font>Delhi ,</font> <font>India</font>
+</br></br>
+<font>91 + 8377043632 </font>
+
+</h6>
+
+<div style="height:130px;width:90%; background:0; bottom:70px;position:fixed;'">
+
+<button id="co_btn"><li class="fa fa-phone"></li></button>
+<button id="co_btn"><li class="fa fa-comment"</button>
+<button id="co_btn"><li class="fa fa-bell"</button>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+</br>
+
+<div style="width:90%;" onclick="post_line()">
+</br>
+
+<h1>Websites creating</h1>
+<p style="color:grey;">On your site</p>
+</br>
+<div id="hh_img_top" ></div>
+
+<button onlclick="bol1()" id="bol1"></button>
+<button onlclick="bol2()"id="bol1"></button>
+
+<button onlclick="bol3()" id="bol1"></button>
+</br></br>
+<h3>Create a mobile-friendly, primium website for your business, then watch it take off with built-in marketing.
+
+</h3>
+</br></br>
+<button id="order_an" style=""><b>Order web</b></button>
+</br></br>
+<img style="width:100%; height:300px;box-shadow:0px 0px 10px ; background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKoKW1A4DKQ81k44loiFkNS7x0q3IQDscXJw&usqp=CAU');background-size:cover;">
+
+</br></br>
+<i style="font-size:25px;">Your free website is just the beginning.</i>
+</br></br></br></br>
+
+
+<div id="wwt">
+<h2>Order for message me </br> <b style="color:green;">WhatsApp</b></h2>
+</div>
+
+
+
+<marquee>
+<div id="iim"></div>
+<div id="iim" style="background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnR4VEl4QYyW0hmjt2Z1lLujZqYHAiUeaJ0Q&usqp=CAU');background-size:cover;"></div>
+
+<div id="iim" style="background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRObwPMbTz4X5sQThBQIoyu6rrY7-6OYNfc0w&usqp=CAU');background-size:cover;"></div>
+
+
+</marquee>
+</br></br>
+
+<div id="box_om1" style="height:350px;width:100%;box-shadow:0px 0px 10px grey;">
+</br>
+<h1>Code with Template Builder</h1>
+</br></br>
+<p style="font-size:15px;width:90%;">
+We are make a website for you with low cost.</br>
+With 10+ Housand website under management, we have more experience than anyone. We'll make sure you find the right website and that it's got a secure home online.
+</p>
+</br>
+<h3 id="bba_my" style="color:green;"></h3>
+<h3 id="nnum"></h3>
+</br>
+<button onclick="op_bba()"  style="height:40px;width:100px;float:left;margin-left:30px; background:#4070f4; color:white;border:0;border-radius:10px;"><b>Start</b></button>
+</div>
+
+
+</br></br>
+
+<div style="height:350px;width:100%;box-shadow:0px 0px 10px grey;">
+</br>
+<div style="height:150px;width:150px; border-radius:50%;background:url('https://www.ncchomelearning.co.uk/media/how-to/become-a-web-developer.png');background-size:cover"></div>
+</br></br>
+<p style="font-size:15px;width:90%;">
+
+Hey i am shiv kumar from Delhi in india. if you want to grow yor business from your website.
+
+</p>
+</br>
+<h3 id="bba_my2"></h3>
+</br>
+<button onclick="op_bb2()"id="start_bb" style="height:40px;width:100px;float:left;margin-left:30px; background:#4070f4; color:white;border:0;border-radius:10px;"><b>More</b></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!--this is div for page width 90% -->
+
+
+
+
+<div id="tns_bord" class="tns_bord"> <center>
+<div style="height:5px; width:150px;background:black;"></div> </center>
+
+<button onclick="cl_tab()" id="ss_tab" style="">&times</button> </br>
+<h1>About Us</h1>    </br>
+<p style="width:90%;">
+Web app design is a crucial aspect of creating a successful online platform, as it directly impacts the user experience and overall usability. This guide outlines the essential steps and best practices for designing an effective web app.
+</p> </br> <p style="width:90%;">
+Dear Web client Community Members, 
+
+<img style="width:200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJTzI49G2OCmMMFuKbW256_ejIN_mxbvP7g&usqp=CAU"/>
+invaluable contributions, and the exchange of knowledge among our diverse community. </p>
+</br></br>
+<p>Web Developer : Shiv Kumar</br></br>
+Contact: +91 8377043632 .
+</br></br>
+Location : Rohini Sector - 16 , New Delhi-110042
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="privacy_bord" class="tns_bord"> <center>
+<div style="height:5px; width:150px;background:black;"></div> </center>
+
+<button onclick="cl_privacy()" id="ss_tab" style="">&times</button> </br>
+<h1>Privacy policy</h1>    </br></br>
+
+<p style="font-size:15px;width:95%;">
+1. Purpose:
+   - The purpose of this policy is to outline the guidelines and principles governing the provision of web creation services by our company.
+
+</br></br>
+2. Design and Development:
+   - Our team will strive to create visually appealing and functional websites.
+   - All websites will be developed with responsiveness and user experience in mind.
+</br></br>
+3. Timelines and Milestones:
+   - Clear timelines and project milestones will be established and communicated to clients.
+   - Delays caused by client-side factors may impact project schedules.
+</br></br>
+4. Hosting and Domain:
+   - Clients are responsible for providing hosting and domain information or allowing our team to assist in these matters.
+</br></br>
+
+
+5. Review and Amendments:
+    - This policy may be reviewed periodically, and amendments will be communicated to clients.
+</br></br>
+Thanks For Read ,
+
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="trems_bord" class="tns_bord"> <center>
+<div style="height:5px; width:150px;background:black;"></div> </center>
+
+<button onclick="cl_trems()" id="ss_tab" style="">&times</button> </br>
+<h1>Trems</h1>    </br></br>
+<p style="width:90%;">
+<b style="color:grey;">WebSprint: Igniting Your Digital Presence.</b>
+</br></br>
+Unlock the full potential of your online identity with WebSprint – your go-to destination for sleek, responsive, and impactful websites. From concept to execution, we craft digital experiences that resonate. Elevate your brand, engage your audience, and embark on a digital journey tailored just for you. With WebSprint, your online success is not just a destination, but a dynamic and captivating experience. 
+<img style="width:200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJTzI49G2OCmMMFuKbW256_ejIN_mxbvP7g&usqp=CAU"/>
+Ready to sprint into the digital future? Let's build your web presence, one click at a time.
+ </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://api.whatsapp.com/send/?phone=918377043632&text&type=phone_number&app_absent=0"><button id="whatsapp_in">
+
+<img  style="width:100%;border-radius:10px;" src=""/>
+
+
+</button></a>
+</br></br>
+
+
+<div id="footer_bar">
+
+</br>
+<button id="pap" >Home </button > | <button id="pap" onclick="op_privacy()" > Privacy policy  </button>| <button onclick="op_trems()" id="pap" >Trems</button>
+
+
+
+<div style="background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeqw7NBgh6qcdOaYQMNA1MkWi397RCcpPPg&usqp=CAU'); height:160px;width:200px;background-size:cover;"></div>
+</br>
+<p style="font-size:15px;">Copyright © 2024- 2024 Web+ </br>Operating Company, LLC. All Rights Reserved.</br> </p>
+
+
+</br>
+<font>Email : tv.series.help.chat@gmail.com</font>
+</br></br><a href="https://www.facebook.com/shivthakur99?mibextid=ZbWKwL">
+<button class="ssp" ><li class="fa fa-facebook"></li></button></a>
+
+
+<a href="https://www.instagram.com/sk_thakur_99?igsh=bjhlZzVlZDcxbmFw">
+<button class="ssp" >
+<li class="fa fa-instagram"></li>
+</button></a>
+
+
+<a href="https://youtube.com/@tv...series?si=noNhYXdKY5diY2KJ">
+<button class="ssp" >
+<li class="fa fa-youtube"></li></button></a>
+
+</div>
+<script>
+function post_line(){
+    document.getElementById("menu_box").style.height="0px";
+    document.getElementById("cl_menu").style.display="none";
+    
+    document.getElementById("op_menu").style.display="block";
+}
+
+function menu_op(){
+    document.getElementById("menu_box").style.height="300px";
+    
+    document.getElementById("op_menu").style.display="none";
+    
+    document.getElementById("cl_menu").style.display="block";
+}
+
+
+
+function menu_cl(){
+   
+    document.getElementById("menu_box").style.height="300px";
+    
+    document.getElementById("cl_menu").style.display="none";
+    document.getElementById("op_menu").style.display="block";
+    document.getElementById("menu_box").style.height="0px";
+}
+
+
+function  cl_tab(){
+    document.getElementById("tns_bord").style.height="0px";
+}
+
+function  about(){
+    document.getElementById("tns_bord").style.height="600px";
+    
+}
+
+function cl_privacy(){
+    document.getElementById("privacy_bord").style.height="0px";
+    
+}
+
+function op_privacy(){
+    document.getElementById("privacy_bord").style.height="600px";
+    
+}
+
+
+function op_trems(){
+    document.getElementById("trems_bord").style.height="600px";
+    
+}
+
+function cl_trems(){
+    document.getElementById("trems_bord").style.height="0px";
+    
+}
+
+
+function cl_profile(){
+    document.getElementById("profile").style.display="none";
+    
+}
+function op_profile(){
+    document.getElementById("profile").style.display="block";
+    
+    
+}
+
+
+function menu_cc(){
+    document.getElementById("menu_box").style.height="0px";
+    
+    document.getElementById("cl_menu").style.display="none";
+    document.getElementById("op_menu").style.display="block";
+}
+
+
+function op_bba(){
+    document.getElementById("bba_my").innerHTML="WhatsApp";
+    
+    
+    document.getElementById("nnum").innerHTML="91 + 8377043632";
+    
+    document.getElementById("box_om1").style.height="400px";
+    
+    
+    
+}
+
+function op_bb2(){
+    document.getElementById("bba_my2").innerHTML="Location "+"</br>"+"Rohini sector Delhi NCR - 110042";
+    
+    document.getElementById("start_bb").style.display="none";
+    
+    
+    
+}
+
+</script>
+</body>
+</html>
